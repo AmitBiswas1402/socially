@@ -12,8 +12,7 @@ import toast from "react-hot-toast";
 import ImageUpload from "./ImageUpload";
 
 function CreatePost() {
-  const { user } = useUser();
-  
+  const { user } = useUser();  
 
   const [content, setContent] = useState("");
   const [imageUrl, setImageUrl] = useState("");
