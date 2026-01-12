@@ -15,7 +15,7 @@ import toast from "react-hot-toast";
 
 type Notifications = Awaited<ReturnType<typeof getNotifications>>;
 type Notification = Notifications[number];
- 
+
 const getNotificationIcon = (type: string) => {
   switch (type) {
     case "LIKE":
