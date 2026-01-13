@@ -26,7 +26,6 @@ async function ProfilePageServer({ params }: { params: { username: string } }) {
 
   if (!user) {
     notFound();
-    return null;
   }
 
   const [posts, likedPosts, isCurrentUserFollowing] = await Promise.all([
